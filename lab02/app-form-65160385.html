@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app-form-65160385</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        label span {
+            font-weight: normal;
+        }
+
+        .line2{
+            display: flex;
+            gap: 10px;
+        }
+
+        .line3 input{
+            width: 100%;
+        }
+        .line4 input{
+            width: 100%;
+        }
+        .line5 input{
+            width: 100%;
+        }
+        .line6 {
+            width: 100%;
+        }
+        .line6 input{
+            width: 100%;
+        }
+
+        .line9 input{
+            width: 100%;
+        }
+
+        .line6{
+            display: flex;
+            gap: 10px;
+        }
+        .line7{
+            display: flex;
+            gap: 10px;
+        }
+        .line8 label{
+            margin-right: 6px;
+        }
+
+
+        .line1,.line2,.line3,.line4,.line5,.line6,.line7,.line8,.line9,.line10{
+            margin-bottom: 10px;
+        }
+
+        .submit-form {
+            display: flex;
+            justify-content: center;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+    </style>
+
+<form action="job-application.php" method="post">
+    
+    <div class="line1" ><h1>ใบสมัครงาน</h1></div>
+
+    <div class="line2"  >
+        <label for="fname">ชื่อ * <br>
+            <input type="text" id="fname" required>
+        </label>
+        
+        <label for="lname">นามสกุล *<br>
+            <input type="text" id="lname" required>
+        </label>
+    </div>
+
+    <div class="line3"  >
+        <label for="email">อีเมล * <br>
+            <input type="email" id="email" required>
+        </label>
+    </div>
+
+    <div class="line4"  >
+        <label for="web">เว็บไซต์ผลงาน <br>
+            <input type="url" id="web"  value="http://">
+        </label>
+    </div>
+
+    <div class="line5"  >
+        <label for="job">ตำแหน่งที่ต้องการสมัคร * <br>
+            <input type="text" id="job" required>
+        </label>
+    </div>
+
+    <div class="line6"  >
+        <label for="salary">เงินเดือนที่ต้องการ<br>
+            <input type="number" id="salary">
+        </label>
+        
+        <label for="work">จะเริ่มงานได้เมื่อไหร่<br>
+            <input type="date" id="work">
+        </label>
+    </div>
+
+    <div class="line7"  >
+        <label for="phone">โทรศัพท์มือถือ *<br>
+            <input type="tel" id="phone" required>
+        </label>
+        
+        <label for="tel">โทรศัพท์บ้าน<br>
+            <input type="tel" id="tel">
+        </label>
+    </div>
+
+    <div class="line8"  >
+        <label for="move">คุณสะดวกที่จะย้ายที่อยู่หรือไม่</label><br>
+        <input type="radio" id="convenient" name="move" value="convenient" required>
+        <label for="convenient"><span>สะดวก</span></label>
+        <input type="radio" id="inconvenient" name="move" value="inconvenient" required>
+        <label for="inconvenient"><span>ไม่สะดวก</span></label>
+        <input type="radio" id="unsure" name="move" value="unsure" required>
+        <label for="unsure"><span>ไม่แน่ใจ</span></label>
+    </div>
+
+    <div class="line9"  >
+        <label for="work-part">ลักษณะงานที่ทำในที่ทำงานล่าสุด <br>
+            <input type="text" id="work-part">
+        </label>
+    </div>
+
+    <div class="line10"  >
+        <label for="Q">คำถาม <br>
+            <textarea name="Q" id="Q" cols="30" rows="10"></textarea>
+        </label>
+    </div>
+
+<div class="submit-form">
+    <button type="submit">ส่งใบสมัคร</button>
+</div>
+
+</form>
+</body>
+</html>

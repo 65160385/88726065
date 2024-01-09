@@ -1,0 +1,426 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/***************** main start ********************/
+.main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0; 
+  background-image: url(https://images.pexels.com/photos/3980364/pexels-photo-3980364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.ul-main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+
+  .li-main{
+    padding: 6px 0;
+
+    a {
+      position: relative;
+      display: block;
+      padding: 4px 0;
+      font-family: Lato, sans-serif;
+      color: #ecf0f1;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.5s;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #766b6b;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+      }
+
+      &:hover {
+        color: #8f8989;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+}
+/***************** main end ********************/
+
+
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: black;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+
+.home:hover{
+  color: rgb(174, 173, 173);
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 35px;
+  transform:  .3s;
+}
+
+.navbar a:hover{
+  color: rgb(160, 162, 162);
+}
+
+.blog-background {
+  background-color: #ffffff;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.Myblog{
+  font-size: 50px;
+  text-align: center;
+  color: #000000;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  transition: 0.3s;
+  width: 40%;
+  height: 650px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.button {
+  background-color: #000000; 
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+footer {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffF;
+  font-size: 18px;
+}
+
+footer a:hover{
+  color: rgb(62, 63, 63);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.content table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.timetable h1{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.content td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 100vh;
+  align-items: center;
+  
+}
+
+.read-more {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hh {
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.meowh2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: circle; 
+  padding: 10px; /* กำหนดค่า Padding เป็น 0 เพื่อลดขอบที่ไม่จำเป็น */
+  margin: 0; /* กำหนดค่า Margin เป็น 0 เพื่อลดขอบที่ไม่จำเป็น */
+}
+
+li {
+   margin-left: 30px; /* กำหนดระยะห่างด้านซ้ายของรายการ */
+}
+
+
+.order-content {
+  display: flex;
+  justify-content: center;
+}
+
+.order-content form {
+  font-size: 25px;
+}
+.order-content table{
+  margin-top: 20px;
+}
+.order-content h2 {
+  margin-top: 20px;
+}
+
+.time th {
+  background-color: #777676;
+  color: rgb(255, 255, 255);
+}
+
+.day {
+  background-color: #9d9a9a;
+  color: #ffffff;
+}
+
+.col {
+  background-color: #a9cef4;
+  color: black;
+}
+
+.submit {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+/* aboutme start */
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.user-card-full {
+  overflow: hidden;
+  width: 1000px;
+  height: auto;
+}
+
+.about-content .card {
+  border-radius: 5px;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.992);
+  border: none;
+  margin-bottom: 30px;
+}
+
+.m-r-0 {
+  margin-right: 0px;
+}
+
+.m-l-0 {
+  margin-left: 0px;
+}
+
+.user-card-full .user-profile {
+  border-radius: 5px 0 0 5px;
+}
+
+.bg-c-lite-green {
+      background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
+  background: linear-gradient(to right, #6f6e6e, #000000);
+}
+
+.user-profile {
+  padding: 20px 0;
+}
+
+.card-block {
+  padding: 1.25rem;
+}
+
+.m-b-25 {
+  margin-bottom: 25px;
+}
+
+.img-radius {
+  border-radius: 5px;
+}
+
+
+
+h6 {
+  font-size: 14px;
+}
+
+.card .card-block p {
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 1400px){
+p {
+  font-size: 14px;
+}
+}
+
+.card-block {
+  padding: 1.25rem;
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px !important;
+}
+
+.card .card-block p {
+  line-height: 25px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.text-muted {
+  color: #919aa3 !important;
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.f-w-600 {
+  font-weight: 600;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-t-40 {
+  margin-top: 20px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px !important;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-t-40 {
+  margin-top: 20px;
+}
+
+.user-card-full .social-link li {
+  display: inline-block;
+}
+
+.user-card-full .social-link li a {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* aboutme start */
