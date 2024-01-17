@@ -7,10 +7,10 @@ body {
     h1 {
     color: #333;
     font-size: 24px;
-    background-color: #59798b;
+    background-color: #bbffb2;
     padding: 15px;
     border-radius: 5px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
@@ -44,7 +44,7 @@ body {
     }
     button {
     padding: 12px 24px;
-    background-color: #737f86;
+    background-color: #ffaced;
     color: white;
     border: none;
     border-radius: 8px;
@@ -52,5 +52,5 @@ body {
     transition: background-color 0.3s;
     }
     button:hover {
-    background-color: #b3aaaa;
+    background-color: #0056b3;
     }
