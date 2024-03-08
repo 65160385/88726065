@@ -13,7 +13,7 @@
     <div id="app">
         <!-- @submit เป็นรูปย่อของ v-on:submit -->
         <form @submit.prevent="checkForm">
-            <p v-if="Object.keys(errors).length">
+            <p v-if="Object.keys(errors).length" style="color: red">
                 <b>Please correct the following error(s):</b>
             </p>
             
